@@ -53,6 +53,10 @@ abstract class VideoPlayerPlatform extends PlatformInterface {
     throw UnimplementedError('create() has not been implemented.');
   }
 
+  Future<void> setDataSource(int? textureId, DataSource dataSource){
+    throw UnimplementedError('setDataSource() has not been implemented.');
+  }
+
   /// Returns a Stream of [VideoEventType]s.
   Stream<VideoEvent> videoEventsFor(int textureId) {
     throw UnimplementedError('videoEventsFor() has not been implemented.');
@@ -87,7 +91,7 @@ abstract class VideoPlayerPlatform extends PlatformInterface {
   Future<void> setPlaybackSpeed(int textureId, double speed) {
     throw UnimplementedError('setPlaybackSpeed() has not been implemented.');
   }
-
+  
   /// Gets the video position as [Duration] from the start.
   Future<Duration> getPosition(int textureId) {
     throw UnimplementedError('getPosition() has not been implemented.');
